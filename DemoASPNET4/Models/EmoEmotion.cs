@@ -12,6 +12,6 @@ namespace DemoASPNET4.Models
         public float Score { get; set; }
         public int EmoFaceId { get; set; }
         public EmoEmotionEnum EmotionType { get; set; }
-        public virtual EmoFace Face { get; set; }
+        public virtual EmoFace Face { get; set; } 
     }
 }
