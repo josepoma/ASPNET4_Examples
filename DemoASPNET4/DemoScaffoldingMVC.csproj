@@ -195,6 +195,7 @@
     <Compile Include="Controllers\EmoEmotionsController.cs" />
     <Compile Include="Controllers\EmoFacesController.cs" />
     <Compile Include="Controllers\EmoPicturesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,7 +204,9 @@
     <Compile Include="Models\EmoEmotionEnum.cs" />
     <Compile Include="Models\EmoFace.cs" />
     <Compile Include="Models\EmoPicture.cs" />
+    <Compile Include="Models\Home.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\EmotionHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -219,6 +222,7 @@
     <Content Include="Views\EmoPictures\Edit.cshtml" />
     <Content Include="Views\EmoPictures\Index.cshtml" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

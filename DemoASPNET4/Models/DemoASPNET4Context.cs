@@ -14,9 +14,15 @@ namespace DemoASPNET4.Models
         // automatically whenever you change your model schema, please use data migrations.
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
-    
+
         public DemoASPNET4Context() : base("name=DemoASPNET4Context")
+        //public DemoASPNET4Context() : base("name=EmotionAzureConnection")
         {
+            //Regenere la estrategia de BD
+            Database.SetInitializer<DemoASPNET4Context>(
+                //Si el modelo cambio se borrara y creara nuevamente la BD
+                new DropCreateDatabaseIfModelChanges<DemoASPNET4Context>()
+                );
         }
 
         public DbSet<EmoPicture> EmoPictures { get; set; }
